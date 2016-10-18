@@ -1,0 +1,96 @@
+<!-- COMPSCI 335 A2 -->
+<!-- Author: Viet Anh Ho -->
+<!-- UPI: vho831-->
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<title>Computer Science @ UOA</title>
+	<link rel="stylesheet" type="text/css" href="index.css"/>
+	<script src="index.js"></script>
+	<script>
+		window.onload = function() {
+			showhomeTab();
+		}
+
+	</script>
+</head>
+<body>
+	<div id="showHome">
+		<section>
+			<img class="logo" src="http://redsox.tcs.auckland.ac.nz/ups/logo.svg" alt="logo" style="width:20%">
+			<h1>Computer Science @UOA </h1>
+			<p>Welcome to New Zealand's leading computer science department. We pride ourselves on the excellence of our staff and our students.</p>
+		</section>
+
+
+		<div class="main-nav">
+			<ul class="topnav" id="myTopnav">
+				<li id="homeTab"><a class= "active" href="#Home" onclick="showhomeTab();">HOME</a>
+				</li>
+				<li id="courseTab"><a href="#Courses" onclick="showcourseTab();">COURSES</a>
+				</li>
+				<li id="peopleTab"><a href="#People" onclick="showpeopleTab();">PEOPLE</a>
+				</li>
+				<li id="newsTab"><a href="#News"onclick="shownewsTab();">NEWS</a>
+				</li>
+				<li id="noticesTab"><a href="#Notices" onclick="shownoticesTab();">NOTICES</a>
+				</li>
+				<li id="guestbookTab"><a href="#Guestbook"onclick="showguestbookTab();">GUEST BOOK</a>
+				</li>
+				<li class="icon">
+					<a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">&#9776;</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<hr>
+	<div id="home">
+				<img class= "photo" src="photo.jpg">
+	</div>
+
+	<div id="course">
+		<div id= "Courses"></div>
+	</div>
+
+	<div id="people">
+		<table id= "People"></table>
+	</div>
+
+	<div id="news">
+		<div id= "News"></div>
+	</div>
+
+	<div id="notices">
+		<table id= "Notices"></table>
+	</div>
+
+	<div id="guestbook">
+		<!-- Feedback -->
+		<div class="center">
+			<p class="feedback"> Guest comments can be entered for any further feedback or request: </p>
+			<textarea id="comment" rows="4" cols="70" type="text" placeholder="Comment here..."></textarea>
+			<br></br>
+		</div>
+
+
+		<!-- Name -->
+		<p class="feedback"> Your name:
+			<input id="name" type="text" placeholder="Enter your name here..."/>
+			<input type="submit" value="POST" onclick = "postComment()"/>
+		</p>
+
+		<br></br>
+		<br></br>
+
+		<!-- Recent comments -->
+		<p id="recentcomments"> Recent comments: </p>
+		<p id="peoplecomment"></p>
+	</div>
+
+</body>
+<hr class="style1">
+<div class="copyright">Copyright &copy Viet Anh Ho 2016</div>
+</html>
